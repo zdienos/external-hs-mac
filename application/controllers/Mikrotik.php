@@ -103,10 +103,6 @@ class Mikrotik extends CI_Controller {
 		        {
 		          $pesan = 'user ' .$username. ' login dengan  IP: ' .$ip. ' dan MAC-ADDR:' .$mac;
 		          $this->m->tambahLogUser($pesan);
-		      // 		DB::insert('mikrotik_user_log',[
-		      // 			'message' => 'user ' .$_POST['username']. 'login with  IP: ' .$_POST['ip']. ' and MAC-ADDR:' .$_POST['mac'],
-		      // 			'created_at' => date('Y-m-d H:i:s'),
-		      // 		]);
 		        }
 		      }
 
@@ -115,7 +111,6 @@ class Mikrotik extends CI_Controller {
 		    die('could not connect to router.');
 		  }//end mikrotik connect
 		}//end isset
-
 
 
 		if(isset($external_login)){
